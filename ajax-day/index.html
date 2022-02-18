@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>郵便番号</h1>
+    <!-- 郵便番号入力の検索ボックス -->
+    <input type="text" id="zipcode" value="" maxlength="7" required>
+    <input type="button" id="serch_btn" value="検索">
+    <p>※7桁の半角数字で入力してください</p>
+
+    <!-- 検索結果の表示エリア -->
+    <div id="zip_result"></div>
+    <div>
+        <th>都道府県コード</th>
+        <td><input id="address1" type="text" name="address1" value=""></td>
+    </div>
+    <div>
+        <th>都道府県</th>
+        <td><input id="address2" type="text" name="address2" value=""></td>
+    </div>
+
+    <div>
+        <th>市区町村</th>
+        <td><input id="address3" type="text" name="address3" value=""></td>
+    </div>
+
+    <div>
+        <th>町域</th>
+        <td><input id="address4" type="text" name="address4" value=""></td>
+    </div>
+    <div>
+        <th>都道府県（カナ）</th>
+        <td><input id="kana1" type="text" name="kana1" value=""></td>
+    </div>
+    <div>
+        <th>市区町村（カナ）</th>
+        <td><input id="kana2" type="text" name="kana2" value=""></td>
+    </div>
+    <div>
+        <th>町域（カナ）</th>
+        <td><input id="kana3" type="text" name="kana3" value=""></td>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
